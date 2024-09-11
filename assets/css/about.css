@@ -1,0 +1,85 @@
+:root {
+    --main-color: #E4E9EC;
+    --secondary-color: #875F59;
+    --third-color: #eeefeb;
+    --positive-color: #5cb85c;
+    --negative-color: #e65b65;
+    --happy-yellow: #f6be00;
+    --main-font: "Poppins", sans-serif;
+    --Secondary-font: "Dancing Script";
+    --mobile-font-size:40px;
+  }
+
+body{
+    padding-top: 120px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+
+.about-us-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.dot{
+    color: var(--positive-color);
+}
+.about-container{
+    max-width: 1280px;
+    display: flex;
+    gap: 10px;
+}
+
+.container-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-right{
+    flex: 1;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.container-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.abt-main-title{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--positive-color);
+}
+
+.abt-description{
+    font-size: 18px;
+    text-wrap: balance;
+}
+
+.container-image{
+    width: 90%;
+    height: 150px;
+    box-shadow: 10px 10px 1px var(--positive-color);
+    border-top-left-radius: 50px;
+    overflow: hidden;
+}
+
+.container-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}

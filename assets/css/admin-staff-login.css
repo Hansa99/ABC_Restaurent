@@ -1,0 +1,91 @@
+:root {
+  --main-color: #e4e9ec;
+  --secondary-color: #875f59;
+  --third-color: #eeefeb;
+  --positive-color: #5cb85c;
+  --negative-color: #e65b65;
+  --fade-font-color: rgb(104, 104, 104);
+  --main-font: "Poppins", sans-serif;
+  --Secondary-font: "Dancing Script";
+  --mobile-font-size: 40px;
+}
+
+body {
+  background-image: url("../images/common/bg.jpg");
+}
+
+main {
+  background-color: #5cb85c46;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1280px;
+  background-color: var(--main-color);
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.panel-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--Secondary-font);
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.login-cart {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.admin-icon {
+  text-align: center;
+}
+
+.admin-icon span {
+  font-size: 100px;
+  color: var(--positive-color);
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-login-form input {
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  font-size: 16px;
+}
+
+.admin-login-btn {
+  cursor: pointer;
+}
+
+
+/* login error styles */
+.error-message{
+  background-color: #e65b65;
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 25px;
+}

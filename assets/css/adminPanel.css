@@ -1,0 +1,100 @@
+:root {
+  --main-color: #e4e9ec;
+  --secondary-color: #875f59;
+  --third-color: #eeefeb;
+  --main-font: "Poppins", sans-serif;
+  --Secondary-font: "Dancing Script";
+  --mobile-font-size: 40px;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.add-items-panel {
+  width: 1280px;
+  height: 700px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-main-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--Secondary-font);
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.add-panel {
+  background-color: var(--secondary-color);
+  padding: 30px;
+  width: 600px;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.add-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.add-panel form input[type="text"],
+.add-panel form textarea,
+.add-panel form select {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* .add-panel form input[type=text], .add-panel form textarea, .add-panel form select, .add-panel form input[type=file]:focus{
+    outline: none;
+} */
+
+.add-panel form input[type="file"] {
+  font-size: 18px;
+}
+
+.add-panel form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.add-panel form input[type="submit"]:hover {
+  background-color: #ac8e8a;
+  color: white;
+}
+
+.display-container {
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.display-message {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6be00;
+  height: 50px;
+  padding: 0 25px;
+}
+.cross {
+  cursor: pointer;
+}

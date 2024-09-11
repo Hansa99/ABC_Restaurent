@@ -1,0 +1,106 @@
+:root {
+    --main-color: #E4E9EC;
+    --secondary-color: #875F59;
+    --third-color: #eeefeb;
+    --positive-color: #5cb85c;
+    --negative-color: #e65b65;
+    --happy-yellow: #f6be00;
+    --main-font: "Poppins", sans-serif;
+    --Secondary-font: "Dancing Script";
+    --mobile-font-size:40px;
+  }
+
+
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+
+.container{
+    background-color: var(--main-color);
+    width: 1280px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.update-title{
+    font-size: 20px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.form-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 25px;
+}
+
+.preview-item-image{
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-item-image img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.form-items input[type=text], textarea, select {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-items input[type=file]{
+    font-size: 18px;
+
+}
+
+.form-btns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-details-btn, .cancel-details-btn{
+    color: var(--main-color);
+    padding: 8px ;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color:var(--positive-color);
+    cursor: pointer;
+}
+
+.cancel-details-btn{
+    background-color: var(--negative-color);
+}
+
+
+.update-details-btn:hover,.cancel-details-btn:hover{
+    box-shadow: 0px 0px 5px rgba(24, 24, 24, 0.692);
+    color: var(--main-color);
+}

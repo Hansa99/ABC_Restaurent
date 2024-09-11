@@ -1,0 +1,181 @@
+:root {
+  --main-color: #e4e9ec;
+  --secondary-color: #875f59;
+  --third-color: #eeefeb;
+  --main-font: "Poppins", sans-serif;
+  --Secondary-font: "Dancing Script";
+  --mobile-font-size: 40px;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.menu-main-title {
+  font-family: var(--Secondary-font);
+  font-size: 70px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.categories-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.menu-categories {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.menu-categories a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 250ms;
+  text-align: center;
+}
+
+.menu-categories a:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.category-title {
+  font-size: 30px;
+  color: var(--main-color);
+  font-family: var(--Secondary-font);
+  background-color: var(--secondary-color);
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* menu-card */
+
+.item-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px rgba(128, 128, 128, 0.295);
+}
+
+.item-image {
+  width: 300px;
+  height: 300px;
+}
+.item-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.item-description {
+  width: 250px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.item-price-and-qt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add-to-order-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 18px;
+  background-color: #f6be00;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.item-quantity input[type="number"] {
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  text-align: center;
+}
+
+.category-gap {
+  margin-top: 100px;
+}
+
+@media (max-width: 1320px) {
+  .item-list {
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .item-list {
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .item-list {
+    grid-template-columns: 300px ;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .menu-categories{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .menu-categories a{
+    padding: 10px 5px;
+  }
+
+}

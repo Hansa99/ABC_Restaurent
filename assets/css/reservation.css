@@ -1,0 +1,99 @@
+:root {
+  --main-color: #e4e9ec;
+  --secondary-color: #875f59;
+  --third-color: #eeefeb;
+  --positive-color: #5cb85c;
+  --negative-color: #e65b65;
+  --happy-yellow: #f6be00;
+  --main-font: "Poppins", sans-serif;
+  --Secondary-font: "Dancing Script";
+  --mobile-font-size: 40px;
+}
+
+.reservation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.inner-container {
+  width: 1280px;
+  height: 700px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.reservation-card {
+  background-color: white;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.reservation-card-top {
+  background-color: var(--positive-color);
+  padding: 5px;
+  text-align: center;
+}
+
+.reservation-card-bot {
+  display: flex;
+  justify-content: center;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+}
+
+.input-element {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-couple {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  background-color: rgba(128, 128, 128, 0.164);
+  border: none;
+}
+
+.add-reservation-btn {
+  font-size: 16px;
+  color: white;
+  background-color: var(--positive-color);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+
+.error-message{
+  position: absolute;
+  top: 40px;
+  height: 50px;
+  width: 250px;
+  background-color: var(--happy-yellow);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
